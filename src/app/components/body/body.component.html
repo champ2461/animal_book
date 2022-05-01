@@ -1,0 +1,51 @@
+<h3>Animals Encyclopedia</h3>
+<hr>
+
+<button class="btn btn-link" (click)="setChoice(1)">Tiger</button>
+<button class="btn btn-link" (click)="setChoice(2)">Lion</button>
+<button class="btn btn-link" (click)="setChoice(3)">Cheetah</button>
+<button class="btn btn-link" (click)="setChoice(4)">Eagle</button>
+<button class="btn btn-link" (click)="setChoice(5)">Python</button>
+
+
+<div [ngSwitch]="choice">
+
+    <div *ngSwitchCase="1">
+      <div class="row">
+        <div class="col">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Royal_Bengal_Tiger_at_Kanha_National_Park.jpg/440px-Royal_Bengal_Tiger_at_Kanha_National_Park.jpg" alt="">
+        </div>
+        <div class="col">
+            The tiger (Panthera tigris) is the largest cat species, most recognizable for its pattern of dark vertical stripes on reddish-orange fur with a lighter underside. The species is classified in the genus Panthera with the lion, jaguar, leopard, and snow leopard. It is an apex predator, primarily preying on ungulates such as deer and bovids. It is territorial and generally a solitary but social predator, often requiring large contiguous areas of habitat that support its prey requirements. This, coupled with the fact that it is indigenous to some of the more densely populated places on Earth, has caused significant conflicts with humans.
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="2">
+        <div class="row">
+          <div class="col"><img class="img img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/440px-Lion_waiting_in_Namibia.jpg" alt=""></div>
+          <div class="col">The lion (Panthera leo) is a species in the family Felidae; it is a muscular, deep-chested cat with a short, rounded head, a reduced neck and round ears, and a hairy tuft at the end of its tail. The lion is sexually dimorphic; males are larger than females with a typical weight range of 150 to 250 kg (330 to 550 lb) for males and 120 to 182 kg (265 to 400 lb) for females. Male lions have a prominent mane, which is the most recognisable feature of the species. A lion pride consists of a few adult males, related females and cubs. Groups of female lions typically hunt together, preying mostly on large ungulates. The species is an apex and keystone predator, although they scavenge when opportunities occur. Some lions have been known to hunt humans, although the species typically does not.
+  
+            </div>
+        </div>
+      </div>
+      <div *ngSwitchCase="3">
+          <div class="row">
+              <div class="col"><img class="img img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg/440px-Cheetah_%28Acinonyx_jubatus%29_female_2.jpg"></div>
+              <div class="col">The cheetah (/ˈtʃiːtə/; Acinonyx jubatus) is a large cat of the subfamily Felinae that occurs in Southern, North and East Africa, and a few localities in Iran. The species is IUCN Red Listed as vulnerable, as it suffered a substantial decline in its historic range in the 20th century due to habitat loss, poaching, illegal pet trade, and conflict with humans. By 2016, the global cheetah population has been estimated at approximately 7,100 individuals in the wild. Several African countries have taken steps to improve cheetah conservation measures.[1]
+  
+                </div>
+            </div>
+      </div>
+      <div *ngSwitchCase="4">
+          <div class="row">
+              <div class="col"><img class="img img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/%C3%81guila_calva.jpg/440px-%C3%81guila_calva.jpg"></div>
+              <div class="col">Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of genera, not all of which are closely related. Most of the 60 species of eagle are from Eurasia and Africa.[1] Outside this area, just 14 species can be found—2 in North America, 9 in Central and South America, and 3 in Australia.
+  
+                </div>
+            </div>
+      </div>
+
+      <div *ngSwitchDefault>
+        No content avaialble for this selection. Sorry for the inconvenience.
+      </div>
+</div>
